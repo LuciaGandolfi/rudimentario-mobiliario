@@ -1,0 +1,250 @@
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0px 5px;
+  padding: 0px;
+}
+
+/* Header, logo y menu nav */
+
+.logo {
+  width: 110px;
+  object-fit: cover;
+  border: 1px solid #0e0e0d;
+  border-radius: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #504f4e;
+  border-radius: 1%;
+  padding: 10px 40px 5px;
+  border-bottom: 2px solid rgb(67, 65, 65);
+  margin-bottom: 5px;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  font-weight: 450;
+  padding: 10px;
+}
+
+
+
+.nav-ul {
+  display: flex;
+  font-size: 17px;
+  font-weight: 6px;
+}
+
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  color: rgb(193 124 66);
+  text-decoration: none;
+}
+
+/* Body */
+
+body {
+  background-color: #504f4e;
+  color: rgba(245, 245, 245, 0.829);
+  font-family: "Open Sans";
+}
+
+/* Index */
+
+.indextools {
+  display: flex;
+  width: 100px;
+}
+
+.section-index img {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  margin-right: 0px;
+  width: 100%;
+}
+
+/* viñetas de listas */
+
+
+.img-prd {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,0.5fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 10px;
+  padding: 30px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.img-prd img {
+  width: 85%;
+  object-fit: cover;
+ }
+
+
+.sectionvideo {
+margin: 50px;
+}
+
+.video-container {
+margin: 100px;
+display: flex;
+align-items: center;
+justify-content:space-between;
+}
+
+.indextool {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  margin: 30px;
+  margin-bottom: 30px;
+  background-color: #474544;
+}
+
+.indextool img {
+  width: 50%;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(222, 201, 184);
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #cec9c9;
+}
+
+.button:active {
+  background-color: #ccc;
+}
+
+/* footer styles */
+
+footer {
+  margin: 10px;
+  background-color: #504f4e;
+  padding: 30px 10px 30px 20px;
+  border-top: 2px solid rgb(67, 65, 65);
+  margin-top: 5px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+
+h1 {
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  color: bisque;
+}
+
+
+.quienes-somos {
+  width: 30%;
+}
+
+.div-quienessomos {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  margin: 30px;
+  justify-content: space-around;
+}
+
+.img-trab {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: repeat(3, 0.5fr);
+  align-items: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.img-trab img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* Media Queries */
+
+
+/* Mobile */
+@media only screen and (max-width: 576px) {
+/* Estilos Generales */
+
+header {
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 50;
+}
+
+.logo {
+  height: 28%;
+  width: 86px;
+}
+
+.nav-ul {
+  padding: 0px;
+  margin: 1px 1px;
+  font-size: 12px;
+}
+
+.section-index img {
+  width: 97%;
+  height: 79%;
+  margin-top: 40px;
+}
+
+.menu-nav {
+  padding: 7px;
+}
+
+.video-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe {
+  width: 500px;
+  height: 300px;
+}
+
+/* Galeria */
+.img-prd {
+  grid-template-columns: auto;
+}
+
+}
