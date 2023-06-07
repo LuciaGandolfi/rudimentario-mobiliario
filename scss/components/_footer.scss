@@ -1,0 +1,60 @@
+footer {
+    margin: 10px;
+    background-color: #504f4e;
+    padding: 30px 10px 30px 20px;
+    border-top: 2px solid rgb(67, 65, 65);
+    margin-top: 5px;
+  
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  .newsletter {
+    text-align: center;
+    padding: 40px 0;
+  
+    h2 {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+  
+    .subscribe-bar {
+      display: flex;
+      max-width: 400px;
+      margin: 0 auto;
+      align-items: center;
+  
+      input[type="email"] {
+        flex-grow: 1;
+        padding: 8px;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 20px 0 0 20px;
+      }
+  
+      button {
+        padding: 8px 16px;
+        font-size: 14px;
+        background-color: $main-color;
+        color: white;
+        border: none;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: $section-color;
+        }
+      }
+    }
+  }
+  
+  .button:hover {
+    background-color: $section-color;
+  
+    &:active {
+      background-color: #ccc;
+    }
+  }
+  

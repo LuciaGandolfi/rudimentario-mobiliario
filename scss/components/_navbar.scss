@@ -1,0 +1,20 @@
+
+.logo {
+    width: 110px;
+    object-fit: cover;
+    border: 1px solid #0e0e0d;
+    border-radius: 100%;
+  }
+  
+.navbar-collapse {
+    flex-direction: column;
+  }
+  
+  .nav-link {
+    color: $main-color;
+    font-size: 1.0rem;
+  }
+
+.navbar {
+    background-color: $body-color;
+}

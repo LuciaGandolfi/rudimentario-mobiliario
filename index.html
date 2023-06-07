@@ -17,15 +17,24 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="./img/logo.png" alt="" />
-      <nav class="menu-nav">
-        <ul class="nav-ul">
-          <li><a href="./index.html">INICIO</a></li>
-          <li><a href="Pages/productos.html">PRODUCTOS</a></li>
-          <li><a href="Pages/quienessomos.html">QUIENES SOMOS</a></li>
-          <li><a href="Pages/trabajos.html">TRABAJOS</a></li>
-          <li><a href="Pages/contactanos.html">CONTACTANOS</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="./img/logo.png" alt="" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
+              <a class="nav-link" href="./Pages/productos.html">PRODUCTOS</a>
+              <a class="nav-link" href="./Pages/trabajos.html">TRABAJOS</a>
+              <a class="nav-link" href="./Pages/quienessomos.html">QUIENES SOMOS</a>
+              <a class="nav-link" href="./Pages/contactanos.html">CONTACTANOS</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -56,9 +65,6 @@
           </button>
           </div>
       </section>
-      <!-- <section class="section-index">
-        <img src="./img/bio-02.jpg" alt="" />
-      </section> -->
       <section class="sectionvideo">
         <aside class="video-container">
           <iframe class="video1"
@@ -84,11 +90,31 @@
         </aside>
       </section>
       <section class="indextool">
-         <img src="./img/indextool.jpg" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum neque fugiat dicta ipsam dolorem recusandae quidem error iste labore commodi consequatur ex, molestias reprehenderit! Accusantium maiores corrupti numquam quod.<a class="button" href="./Pages/quienessomos.html">Conoce mas sobre nosotros</a> </p>
+        <img src="./img/indextool.jpg" alt="">
+        <div class="content">
+          <h2>Noble y Artesanal</h2>
+          <p>Cada una de nuestras piezas de mobiliario es cuidadosamente elaborada a mano, con dedicación y pasión, desde el inicio hasta el final de su creación. Utilizamos madera seleccionada con esmero y técnicas artesanales para dar vida a muebles únicos y duraderos.</p>
+          <a class="button" href="./Pages/quienessomos.html">Conoce más sobre nosotros</a>
+        </div>
+      </section>
+      <section class="indextool">
+        <img src="./img/bio-07.jpg" alt="">
+        <div class="content">
+          <h2>Creativos y Autenticos</h2>
+          <p>Utilizamos cuidadosamente maderas seleccionadas y técnicas artesanales para dar vida a piezas de mobiliario únicas y duraderas. Te invitamos a explorar nuestra colección y descubrir la belleza y calidad de nuestros productos artesanales.</p>
+          <a class="button" href="./Pages/productos.html">Conoce nuestros productos</a>
+        </div>
       </section>
     </main>
     <footer>
+      <section class="newsletter">
+        <h2>Suscríbete a nuestro newsletter</h2>
+        <div class="subscribe-bar">
+          <input type="email" placeholder="Ingresa tu correo electrónico" required>
+          <button type="submit">Suscribirme</button>
+        </div>
+      </section>
+      <section>
       <ul>
         <li class="catalogo">
           <a href="./img/Catalogo.pdf">Descargar Catalogo</a>
@@ -102,6 +128,7 @@
           >
         </li>
       </ul>
+    </section>
     </footer>
 
     <!-- script de boostrap -->

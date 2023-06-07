@@ -1,0 +1,22 @@
+.div-quienessomos {
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    margin: 60px;
+    justify-content: space-around;
+  
+    img {
+      width: 30%;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+  
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  
+    h2 {
+      text-align: center;
+    }
+  }
+
