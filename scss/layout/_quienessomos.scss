@@ -1,22 +1,54 @@
 .div-quienessomos {
     display: flex;
-    align-items: center;
-    padding: 80px;
-    margin: 60px;
-    justify-content: space-around;
+    width: 100%;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+  }
   
-    img {
-      width: 30%;
-      object-fit: cover;
-      transition: transform 0.3s ease-in-out;
+  .div-quienessomos .quienes-somos {
+    margin-top: 110px;
+    flex: 1;
+    object-fit: cover;
+  }
   
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
+  .div-quienessomos .content {
+    margin-top: 150px;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
   
-    h2 {
-      text-align: center;
-    }
+  .div-quienessomos .content h2 {
+    margin-top: 0; 
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .div-quienessomos .content article {
+    flex: 1;
   }
 
+  
+  @media only screen and (max-width: 576px) {
+    .div-quienessomos {
+      flex-direction: column;
+      margin-top: 100px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .div-quienessomos .quienes-somos {
+      order: 2;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .div-quienessomos .content {
+      order: 1;
+      margin-top: 10px;
+    }
+  }

@@ -9,18 +9,28 @@
   }
 }
 
-.indextool {
-  display: flex;
-  align-items: flex-start;
-  padding: 10px;
-  margin: 30px;
-  margin-bottom: 30px;
-  background-color: $section-color;
+  .indextool {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    margin-bottom: 100px;
+    background-color: $secondary-color;
 
-  img {
-    width: 50%;
-    margin-right: 20px;
-  }
+    img {
+      width: 50%;
+      margin-right: 20px;        
+    }
+
+    .scroll-effect .content {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    
+    .scroll-effect.active .content {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
   .content {
     flex-grow: 1;
@@ -36,13 +46,7 @@
     }
 
     .button {
-      margin-top: 30px;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: $main-color;
-      color: #e9dfdf;
-      text-decoration: none;
-      border: 1px solid #333;
+     @include boton-estilo;
 
       &:hover {
         background-color: $section-color;
@@ -83,11 +87,11 @@ ul {
 /* Body */
 
 body {
-  background-color: $body-color;
+  background-color: rgb(69, 63, 63) ;
   color: rgba(245, 245, 245, 0.829);
   font-family: "Open Sans";
 }
 
-.carousel {
-  margin-top: 200px;
+ .carousel {
+  margin-top: 100px;
 }

@@ -10,5 +10,21 @@ $main-color: #bd7b42;
 $section-color: #474544;
 $body-color: #504f4e;
 $hover-color: #8a5b32;
+$secondary-color: rgb(73, 69, 69);
+ 
 
+@mixin boton-estilo {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $main-color;
+    color: #090808;
+    text-decoration: none;
+    border: 1px solid #333;
+}
 
+@mixin imagenes {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

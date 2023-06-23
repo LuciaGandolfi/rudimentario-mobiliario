@@ -3,7 +3,8 @@
     width: 110px;
     object-fit: cover;
     border: 1px solid #0e0e0d;
-    border-radius: 100%;
+    border-radius: 100%; 
+    cursor: pointer;  
   }
   
 .navbar-collapse {
@@ -16,5 +17,10 @@
   }
 
 .navbar {
-    background-color: $body-color;
+    background-color: rgb(44, 42, 42);
 }
+
+.navbar-nav {
+ margin-right: 100px;
+}
+

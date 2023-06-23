@@ -14,13 +14,9 @@
   .video-container {
     flex-direction: column;
     align-items: center;
-  }
+    max-width: 100%; 
+   }
 
-  .video-container iframe {
-    width: 100%; 
-    height: 300px;
-    margin-bottom: 20px;
-  }
 
   // index tool section
 
@@ -42,18 +38,30 @@
     align-self: center;
   }
 
- .div-quienessomos {
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 10px;
+  
+   .contactanos-section {
+    padding-top: 50px;
+    flex-direction: column;
+    margin-top: 100px;
+    height: auto;
+  }
 
-    img {
-      order: 2;
-      width: 100%;
-      margin-bottom: 20px;
-      flex-basis: 100%;
-    }
+  .contactanos-section .container-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
+  .container-form {
+    margin-top: 1px;
+    margin-bottom: 10px;
+  }
+
+  .contactanos-section img {
+    order: 2;
+    margin-bottom: 20px;
+  }
+
+  
 }
 
-}
